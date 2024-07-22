@@ -1,0 +1,279 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="textData1" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1162.4,3007.2</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Activities.System.FileOperations</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1172.8,2942.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="data" />
+      <Variable x:TypeArguments="x:String" Name="textData" />
+      <Variable x:TypeArguments="x:String" Name="stringOutputData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome New Tab" sap:VirtualizedContainerService.HintSize="1110.4,2853.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="95c812b6-a024-4711-a6f5-662995e442d4" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1076.8,2613.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="1014.4,114.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://www.bing.com/chat?q=Microsoft+Copilot&amp;FORM=hpcodx" Version="V3" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="1" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1014.4,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(esc)][u(hk)]" Version="V3">
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CIB-TEXT-INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1014.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="95c812b6-a024-4711-a6f5-662995e442d4" Text="[textData1]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bing.com/chat?q=Microsoft%20Copilot&amp;qs=ds&amp;form=HPCODX" CVScreenId="af4a1843-f79e-4c8a-b650-6185ef39f51f" ContentHash="zoeRR2cYPkiH5XkR500A3Q" CvElementArea="630, 893, 866, 118" CvType="InputBox" DesignTimeRectangle="654, 913, 820, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-action-bar-main' shadowhostid='' tag='CIB-ACTION-BAR' /&gt;&lt;webctrl shadowhostid='cib-action-bar-main' tag='CIB-TEXT-INPUT' /&gt;&lt;webctrl id='searchbox' shadowhostid='' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-action-bar-main' shadowhostid='' tag='CIB-ACTION-BAR' /&gt;&lt;webctrl shadowhostid='cib-action-bar-main' tag='CIB-TEXT-INPUT' /&gt;&lt;webctrl id='searchbox' shadowhostid='' tag='TEXTAREA' type='text' class='text-area' placeholder='Ask me anything...' aaname='' /&gt;" Guid="5df4ae3d-ad32-4237-a84f-94bda61d1d47" InformativeScreenshot="18b7f867f2ca69e150cb50458be391f2.png" Reference="OqwtmJbKnEa78p2SL190EA/cBG0vSk_nUi7bDRJGTqnlg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Copilot in Bing' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1014.4,210.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+            <uix:NCheckState DisplayName="Check App State 'Designer'" sap:VirtualizedContainerService.HintSize="1014.4,1701.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="95c812b6-a024-4711-a6f5-662995e442d4" Timeout="60" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,1458.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="upr:ILocalResource" Name="downloadedImage" />
+                    <Variable x:TypeArguments="sd:DataTable" Name="data" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Copilot'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Middle" ScopeIdentifier="95c812b6-a024-4711-a6f5-662995e442d4" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.bing.com/images/create/energetic-dance-track-with-themes-of-youthful-rebe/1-663e3551d39a4d66b05997608664dd86?showselective=1&amp;partner=sydney&amp;FORM=SYDBIC" DesignTimeRectangle="414, 421, 206, 206" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='host' /&gt;&lt;webctrl shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl parentid='mmComponent_images_as_1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='host' /&gt;&lt;webctrl shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl parentid='mmComponent_images_as_1' tag='IMG' type='' class='mimg' aaname='energetic dance track with themes of youthful rebellion. Image 1 of 4' /&gt;" Guid="92ec90c7-ade8-464a-b558-d94d23afef0a" InformativeScreenshot="c2e4ad0d91ceb1eed6be31ad5aa23e71.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Copilot in Bing' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="7b24cee9-5918-4807-a614-9a636a930c03" CvTextArea="357, 277, 86, 20" CvTextArgument="/ Copilot" CvType="Text" DesignTimeRectangle="352, 274, 90, 24" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='DIV' type='' class='header' aaname='                           ' check:innerText='Copilot' /&gt;" Guid="97f80859-49db-41c4-8dbd-1126f6715ecf" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="1" DisplayName="Keyboard Shortcuts 'H1'" sap:VirtualizedContainerService.HintSize="449.6,231.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" ScopeIdentifier="95c812b6-a024-4711-a6f5-662995e442d4" Shortcuts="[d(hk)][d(ctrl)][k(tab)][u(ctrl)][u(hk)]" Version="V3">
+                    <uix:NKeyboardShortcuts.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.bing.com/chat?q=Microsoft+Copilot&amp;FORM=hpcodx" DesignTimeRectangle="76, 246, 561, 522" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='host' /&gt;&lt;webctrl shadowhostid='' tag='CIB-SHARED' /&gt;&lt;webctrl class='message' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='host' /&gt;&lt;webctrl shadowhostid='' tag='CIB-SHARED' /&gt;&lt;webctrl class='message' shadowhostid='' tag='DIV' type='' aaname='            ' /&gt;" Guid="695ec6e8-8b9f-4fdb-ba75-8b7b69c66725" InformativeScreenshot="a5423ef00ef84171be2068589ed233d9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Copilot in Bing' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="bc3a4702-597e-46dc-90c5-39f9e7bb1c63" CvTextArea="54, 121, 94, 18" CvTextArgument="Microsoft Bing" CvType="Text" DesignTimeRectangle="32, 120, 116, 18" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='b_logo' aaname='' /&gt;" Guid="f3941fe6-4ea6-4db1-adec-3d7e9662c58c" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NKeyboardShortcuts.Target>
+                  </uix:NKeyboardShortcuts>
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Image Creator" sap:VirtualizedContainerService.HintSize="449.6,800.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="b7cdc371-e597-4c51-817f-c835304f82c8" Version="V2">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,552" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="sd:DataTable" Name="data" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[data]" DelayAfter="5" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0 Src'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='src'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="b7cdc371-e597-4c51-817f-c835304f82c8" Version="V3">
+                            <uix:NExtractData.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.bing.com/images/create/energetic-dance-track-with-themes-of-youthful-rebe/1-663efffb777e4c00aa734c8fe2c0a5b1?id=bW97CDp3285%2f8aA1yc3%2f2w%3d%3d&amp;view=detailv2&amp;idpp=genimg&amp;idpclose=1&amp;thId=OIG2.Wt.fWUnrrupgytw736Xd&amp;FORM=SYDBIC" DesignTimeRectangle="34, 177, 1126, 815" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='mainImageWindow' tag='DIV' /&gt;" Guid="c8099d50-26f5-4eda-bdbc-c3580e291e1f" InformativeScreenshot="cbc725442676dd86259512009c7a1d75.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Image Creator' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                            </uix:NExtractData.Target>
+                          </uix:NExtractData>
+                          <ui:OutputDataTable DataTable="[data]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="353.6,112.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[stringOutputData]" />
+                          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\Dell\Desktop\output.txt" sap:VirtualizedContainerService.HintSize="353.6,159.2" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[stringOutputData]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE1SURBVFhH7ZXrccMgEIRVAiW4FDcU5A6SDqwOlEIiUYLcgUux99AqgF5BmMkf883c2HN3HMvxUFUoFGJRF3NW+qdRur/DHrRB1V2L2Ilp+UFxpWpz9SZdt7q7Si6H5cFOrrvb6oTrNmQVsVj5R28wwXmaxP7X/XeQg07Ywa+C4qegsO6+GFogsSAXwhhKBwfOraw2Ld2b2O44EQ3d6aDI8FswYkXcjknAne50vGIPunaBABzYY2N28YtJcbp38cfQlQ6KuAfn+BYMdKeDIvLqjQVxwOje5Oih/ZPZimDmk6EFEgtycz3NKOa6IDa++3Y78KusyPD6RXUrGjuJfx2jbbtbh6GIsBNrNu9EThEChMjTLAfN74jclEa2wubMn+TcImIoIibmIuj+X5yI7U95ofDuVNUToEN3Uyyxs3sAAAAASUVORK5CYII=" InformativeScreenshot="d46305f68654aa758632c80527914759.jpg" Selector="&lt;html app='chrome.exe' title='Image Creator' /&gt;" Title="Image Creator" Url="https://www.bing.com/images/create/energetic-dance-track-with-themes-of-youthful-rebe/1-663efffb777e4c00aa734c8fe2c0a5b1?id=bW97CDp3285%2f8aA1yc3%2f2w%3d%3d&amp;view=detailv2&amp;idpp=genimg&amp;idpclose=1&amp;thId=OIG2.Wt.fWUnrrupgytw736Xd&amp;FORM=SYDBIC" />
+                    </uix:NApplicationCard.TargetApp>
+                  </uix:NApplicationCard>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="449.6,110.4" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[stringOutputData]" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,106.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bing.com/images/create/energetic-dance-track-with-themes-of-youthful-rebe/1-663e33cec2d5436b930c16ef37e015b8?showselective=1&amp;partner=sydney&amp;FORM=SYDBIC" DesignTimeRectangle="414, 343, 424, 448" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='host' /&gt;&lt;webctrl shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl id='mmComponent_images_as_1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='host' /&gt;&lt;webctrl shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl id='mmComponent_images_as_1' tag='DIV' type='' class='dgControl dtl' aaname='' check:innerText='Save&amp;#xD;&amp;#xA;Save&amp;#xD;&amp;#xA;Save&amp;#xD;&amp;#xA;Save' /&gt;" Guid="f0cc4d01-7a50-4789-a3a9-599f65347b22" InformativeScreenshot="6c02e893bc1aa6e89dd51f76c6032f90.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Copilot in Bing' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="9fa1fd56-230d-449a-911b-37d0a45d36f7" CvTextArea="432, 821, 58, 16" CvTextArgument="Designer" CvType="Text" DesignTimeRectangle="432, 819, 56, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='host' /&gt;&lt;webctrl shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aaname='Designer' parentid='gir_attr' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='host' /&gt;&lt;webctrl shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl aaname='Designer' parentid='gir_attr' tag='SPAN' type='' class='' check:innerText='Designer' /&gt;" Guid="5cdd833d-73cc-4a3b-8cfa-ad90181d1c9a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="FWwer1hKWUi8hU4qM_bk6A" IconBase64="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" InformativeScreenshot="7e1f9c8b818a3b8da7b4ffc6d5050dda.png" Reference="OqwtmJbKnEa78p2SL190EA/eLHuMBWbkkeLwgIXtgVBHA" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="New Tab" Url="chrome://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
